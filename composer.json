@@ -10,10 +10,10 @@
         }
     ],
     "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/paulhekkema/QueryBrowser"
-    }
+        {
+            "type": "vcs",
+            "url": "https://github.com/paulhekkema/QueryBrowser"
+        }
     ],
     "require": {
         "paulhekkema/querybrowser": "dev-master"

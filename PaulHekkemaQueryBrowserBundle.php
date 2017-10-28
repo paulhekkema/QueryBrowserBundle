@@ -1,3 +1,5 @@
+<?php
+
 /**
  * QueryBrowserBundle
  *
@@ -15,6 +17,6 @@ namespace PaulHekkema\QueryBrowserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class QueryBrowserBundle extends Bundle
+class PaulHekkemaQueryBrowserBundle extends Bundle
 {
 }
