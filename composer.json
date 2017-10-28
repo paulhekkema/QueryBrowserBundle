@@ -17,5 +17,10 @@
     ],
     "require": {
         "paulhekkema/querybrowser": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "PaulHekkema\\QueryBrowserBundle\\": ""
+        }
     }
 }
