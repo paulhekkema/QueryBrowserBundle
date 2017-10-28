@@ -1,0 +1,21 @@
+{
+    "name": "paulhekkema/querybrowser-bundle",
+    "description": "Symfony Bundle for QueryBrowser",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Hekkema",
+            "email": "paul@hekkema.nl"
+        }
+    ],
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/paulhekkema/QueryBrowser"
+    }
+    ],
+    "require": {
+        "paulhekkema/querybrowser": "dev-master"
+    }
+}

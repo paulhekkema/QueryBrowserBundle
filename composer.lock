@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0b962a88439ed714bf0d55edc96468b3",
+    "packages": [
+        {
+            "name": "paulhekkema/querybrowser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paulhekkema/QueryBrowser.git",
+                "reference": "39989c628db78dc70aaacaa713379b941ec755c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paulhekkema/QueryBrowser/zipball/39989c628db78dc70aaacaa713379b941ec755c4",
+                "reference": "39989c628db78dc70aaacaa713379b941ec755c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4",
+                "squizlabs/php_codesniffer": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PaulHekkema\\QueryBrowser\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Hekkema",
+                    "email": "paul@hekkema.nl",
+                    "homepage": "http://github.com/paulhekkema"
+                }
+            ],
+            "description": "QueryBrowser",
+            "homepage": "http://github.com/paulhekkema/QueryBrowser",
+            "keywords": [
+                "datatables",
+                "querybrowser"
+            ],
+            "support": {
+                "source": "https://github.com/paulhekkema/QueryBrowser/tree/master",
+                "issues": "https://github.com/paulhekkema/QueryBrowser/issues"
+            },
+            "time": "2017-10-28T12:51:02+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "paulhekkema/querybrowser": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
