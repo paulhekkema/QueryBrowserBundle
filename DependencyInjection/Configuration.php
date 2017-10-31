@@ -13,7 +13,7 @@
 
 declare(strict_types=1);
 
-namespace PaulHekkema\QueryBrowserBundle\DependencyInjection;
+namespace Hekkema\QueryBrowserBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -26,30 +26,10 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('paulhekkema_querybrowser');
+        $rootNode = $treeBuilder->root('hekkema_querybrowser');
         $rootNode
             ->children()
-                ->arrayNode('default')
-                    ->isRequired()
-                    ->children()
-                        ->scalarNode('sender')->isRequired()->cannotBeEmpty()->end()
-                        ->scalarNode('sender_name')->defaultNull()->end()
-                        ->scalarNode('subaccount')->defaultNull()->end()
-                    ->end()
-                ->end()
-                ->scalarNode('api_key')->defaultNull()->end()
-                ->scalarNode('disable_delivery')->defaultFalse()->end()
-                ->scalarNode('debug')->defaultFalse()->end()
-                ->arrayNode('proxy')
-                    ->addDefaultsIfNotSet()
-                    ->children()
-                        ->booleanNode('use')->defaultFalse()->end()
-                        ->scalarNode('host')->defaultNull()->end()
-                        ->scalarNode('port')->defaultNull()->end()
-                        ->scalarNode('user')->defaultNull()->end()
-                        ->scalarNode('password')->defaultNull()->end()
-                    ->end()
-                ->end()
+                ->scalarNode('pagesize')->defaultNull()->end()
             ->end();
 
         return $treeBuilder;

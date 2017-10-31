@@ -13,10 +13,10 @@
 
 declare(strict_types=1);
 
-namespace PaulHekkema\QueryBrowserBundle;
+namespace Hekkema\QueryBrowserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PaulHekkemaQueryBrowserBundle extends Bundle
+class HekkemaQueryBrowserBundle extends Bundle
 {
 }

@@ -13,17 +13,28 @@
 
 declare(strict_types=1);
 
-namespace PaulHekkema\QueryBrowserBundle\DependencyInjection;
+namespace Hekkema\QueryBrowserBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class PaulHekkemaQueryBrowserExtension extends Extension
+class HekkemaQueryBrowserExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
+        //$container->setParameter('hekkema_querybrowser.pagesize', $config['pagesize']);
+        //$container->setParameter('hekkema_querybrowser.pagesize2', $config['pagesize']);
+        $container->setParameter('hekkema_querybrowser', [
+        	'a' => 10,
+        	'fggd' => 'fdsfsdf'
+        ]);
+
+        //$loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        //$loader->load('services.yml');
     }
 }

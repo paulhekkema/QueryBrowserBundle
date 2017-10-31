@@ -30,7 +30,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "PaulHekkema\\QueryBrowser\\": "src"
+                    "Hekkema\\QueryBrowser\\": "src"
                 }
             },
             "license": [
