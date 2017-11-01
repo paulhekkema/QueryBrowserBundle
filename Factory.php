@@ -16,7 +16,6 @@ declare(strict_types=1);
 namespace Hekkema\QueryBrowserBundle;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Hekkema\QueryBrowser\QueryBrowser;
 
 /**
  * Factory for creating a new QueryBrowser.
@@ -30,11 +29,13 @@ class Factory
         $this->container = $container;
     }
 
-    public function create($sourceObject) {
+    public function create($sourceObject)
+    {
 
-        print_r($this->container->getParameter('paulhekkema_querybrowser'));
+        //print_r($this->container->getParameter('hekkema_querybrowser'));
 
 
-        return new QueryBrowser($queryDriver, $requestDriver, $storageDriver, $id);
+
+        return \Hekkema\QueryBrowser\Factory::create($sourceObject);
     }
 }
